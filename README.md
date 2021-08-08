@@ -2,28 +2,37 @@
 
 Steps:
 
-1. Execute this script **on the shell** to install node (you can choose the version by editing the number 16) and configure npm.
-```sh
-npm init -y && npm i --save-dev node@16 && npm config set prefix=$(pwd)/node_modules/node && export PATH=$(pwd)/node_modules/node/bin:$PATH
-```
-Or if this does not work try:
-```sh
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash && export NVM_DIR=\"$([ -z \"${XDG_CONFIG_HOME-}\" ] && printf %s \"${HOME}/.nvm\" || printf %s \"${XDG_CONFIG_HOME}/nvm\")\" && [ -s \"$NVM_DIR/nvm.sh\" ] && \\. \"$NVM_DIR/nvm.sh\" && nvm install 16 && nvm use 16
-```
+1. Firsh create the bash language
+
+
+
+![image](https://media.discordapp.net/attachments/873206355828289536/873942041908891658/unknown.png)
+
+
+
 
 2. Create the [`.replit`](https://docs.repl.it/repls/dot-replit) to execute node from the shell instead of the console.
 ```
-run = "npm start"
+run = "node ."
 ```
 
-3. Make sure to add the start script in your package.json file
-```js
-  "scripts": {
-    "start": "node ."
-  }
+3. Than in shell give command
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 ```
 
-4. (Optional) If you had packages like discord.js or sqlite before, you need to re-install those packages
+![image](https://media.discordapp.net/attachments/873206355828289536/873943989198422056/unknown.png)
+
+
+
+4. Than you can code but if you want to install package you have to go in shell and install packages from there
+ like
 ```
-npm uninstall discord.js && npm i discord.js
+npm i discord.js
 ```
+
+For any help contact to *KartikOP*#2229
+                
+                or 
+                
+JOIN DISCORD FOR HELP https://discord.gg/RsBgcdzQ
